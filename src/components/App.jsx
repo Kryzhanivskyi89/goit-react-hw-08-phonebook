@@ -14,13 +14,6 @@ const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
 const ContactsPage = lazy(() => import('../pages/Contacts'));
 
-
-
-// import ContactElem from "./ContactElem/ContactElem";
-// import ContactForm from './ContactForm/ContactForm';
-// import Filter from "./Filter/Filter";
-// import ContactList from "./ContactList/ContactList";
-
 const App = () => {
 
   const dispatch = useDispatch();
@@ -57,15 +50,3 @@ const App = () => {
 
 export default App;
 
-
-// (
-//     <>
-//       <ContactElem title="Phonebook">
-//         <ContactForm />
-//       </ContactElem>
-//       <ContactElem title="Contacts">      
-//         <Filter />        
-//         <ContactList />
-//       </ContactElem>
-//     </>
-//   );
