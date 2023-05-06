@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 
+import style from './AuthorizationNav.module.css';
+
 export const AuthorizationNav = () => {
   return (
-    <div>
-      <NavLink to="/register">Register</NavLink>
-      <NavLink to="/login">Log In</NavLink>
+    <div className={style.nav__wrap}>
+      <NavLink className={style.nav__link} to="/register">Register</NavLink>
+      <NavLink className={style.nav__link} to="/login">Log In</NavLink>
     </div>
   );
 };

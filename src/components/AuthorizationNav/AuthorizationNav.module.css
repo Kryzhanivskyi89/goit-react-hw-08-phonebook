@@ -1,0 +1,16 @@
+.nav__wrap {
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.nav__link {
+    display: inline-block;
+        text-decoration: none;
+        padding: 12px;
+        font-weight: 700;
+        color: #2a363b;    
+}
+
+.nav__link:active {
+    color: #64e84a;
+}
