@@ -1,16 +1,20 @@
 import { Navigation } from '../Navigation/Navigation';
-import { UserMenu } from '../UserMenu/UserMenu';
+import { User } from '../User/User';
 import { AuthorizationNav } from '../AuthorizationNav/AuthorizationNav';
 import { useAuthorization } from '../../hooks/useAuthorization';
 // import { AppHeader } from './AppBar.styled';
 
-export const AppBar = () => {
+export const AppBuffet = () => {
   const { isLoggedIn } = useAuthorization();
 
   return (
-    <AppHeader>
+    // <AppHeader>
+
+      <>
       <Navigation />
-      {isLoggedIn ? <UserMenu /> : <AuthorizationNav />}
-    </AppHeader>
+      {isLoggedIn ? <User /> : <AuthorizationNav />}
+      </>
+      
+    
   );
 };

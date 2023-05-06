@@ -1,5 +1,5 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { LoginForm } from '../components/LoginForm/LoginForm';
+import { AuthorizationForm } from '../components/AuthorizationForm/AuthorizationForm';
 
 export default function Login() {
   return (
@@ -7,7 +7,7 @@ export default function Login() {
       <Helmet>
         <title>Login</title>
       </Helmet>
-      <LoginForm />
+      <AuthorizationForm />
     </HelmetProvider>
   );
 }
