@@ -1,0 +1,18 @@
+.name {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #4a4a4a;
+    color: #fffb00;
+}
+
+.input {
+    display: block;
+    width: 286px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+    outline-color: #fffb00;
+}
