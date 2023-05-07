@@ -1,6 +1,8 @@
 .nav__wrap {
     max-width: fit-content;
     display: inline-block;
+    padding-right: 50px;
+    color: #64e84a;
 }
 
 .nav__link {

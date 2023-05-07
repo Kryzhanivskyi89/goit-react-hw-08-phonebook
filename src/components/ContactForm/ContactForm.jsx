@@ -38,6 +38,8 @@ const ContactForm = () => {
   };
    
 return (
+  
+
     <form className={style.contact__form} onSubmit={handleSubmit}>
         <label className={style.label}> Name
             <input className={style.input}                
