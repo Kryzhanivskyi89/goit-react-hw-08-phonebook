@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { selectContacts, selectError, selectFilter, selectIsLoading } from 'redux/selectors';
 
 import { fetchContacts, deleteContact } from '../../redux/operations';
-import { selectContacts, selectError, selectFilter, selectIsLoading } from 'redux/selectors';
 import  Loader  from './../Loader/Loader'
 import style from './ContactList.module.css';
 
