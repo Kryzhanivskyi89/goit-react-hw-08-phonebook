@@ -1,33 +1,35 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.d53cd9c6.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.2e8dd66a.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.3a0ecb04.js",
+    "static/js/760.b8fddfef.chunk.js": "/goit-react-hw-08-phonebook/static/js/760.b8fddfef.chunk.js",
     "static/css/386.ee400cc1.chunk.css": "/goit-react-hw-08-phonebook/static/css/386.ee400cc1.chunk.css",
     "static/js/386.45d81821.chunk.js": "/goit-react-hw-08-phonebook/static/js/386.45d81821.chunk.js",
-    "static/css/28.2c878080.chunk.css": "/goit-react-hw-08-phonebook/static/css/28.2c878080.chunk.css",
-    "static/js/28.4178bdf0.chunk.js": "/goit-react-hw-08-phonebook/static/js/28.4178bdf0.chunk.js",
-    "static/css/516.be2b18a5.chunk.css": "/goit-react-hw-08-phonebook/static/css/516.be2b18a5.chunk.css",
-    "static/js/516.fd7055b5.chunk.js": "/goit-react-hw-08-phonebook/static/js/516.fd7055b5.chunk.js",
+    "static/css/28.e35b0b06.chunk.css": "/goit-react-hw-08-phonebook/static/css/28.e35b0b06.chunk.css",
+    "static/js/28.a2fde3e7.chunk.js": "/goit-react-hw-08-phonebook/static/js/28.a2fde3e7.chunk.js",
+    "static/css/516.dd2d7f23.chunk.css": "/goit-react-hw-08-phonebook/static/css/516.dd2d7f23.chunk.css",
+    "static/js/516.21cb25a6.chunk.js": "/goit-react-hw-08-phonebook/static/js/516.21cb25a6.chunk.js",
     "static/css/657.d00a247b.chunk.css": "/goit-react-hw-08-phonebook/static/css/657.d00a247b.chunk.css",
-    "static/js/657.addae311.chunk.js": "/goit-react-hw-08-phonebook/static/js/657.addae311.chunk.js",
+    "static/js/657.d277fd68.chunk.js": "/goit-react-hw-08-phonebook/static/js/657.d277fd68.chunk.js",
     "static/js/907.a128d189.chunk.js": "/goit-react-hw-08-phonebook/static/js/907.a128d189.chunk.js",
-    "static/js/691.7a03104a.chunk.js": "/goit-react-hw-08-phonebook/static/js/691.7a03104a.chunk.js",
+    "static/js/691.2d0df213.chunk.js": "/goit-react-hw-08-phonebook/static/js/691.2d0df213.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.d53cd9c6.css.map": "/goit-react-hw-08-phonebook/static/css/main.d53cd9c6.css.map",
-    "main.2e8dd66a.js.map": "/goit-react-hw-08-phonebook/static/js/main.2e8dd66a.js.map",
+    "main.3a0ecb04.js.map": "/goit-react-hw-08-phonebook/static/js/main.3a0ecb04.js.map",
+    "760.b8fddfef.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/760.b8fddfef.chunk.js.map",
     "386.ee400cc1.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/386.ee400cc1.chunk.css.map",
     "386.45d81821.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/386.45d81821.chunk.js.map",
-    "28.2c878080.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/28.2c878080.chunk.css.map",
-    "28.4178bdf0.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/28.4178bdf0.chunk.js.map",
-    "516.be2b18a5.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/516.be2b18a5.chunk.css.map",
-    "516.fd7055b5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/516.fd7055b5.chunk.js.map",
+    "28.e35b0b06.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/28.e35b0b06.chunk.css.map",
+    "28.a2fde3e7.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/28.a2fde3e7.chunk.js.map",
+    "516.dd2d7f23.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/516.dd2d7f23.chunk.css.map",
+    "516.21cb25a6.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/516.21cb25a6.chunk.js.map",
     "657.d00a247b.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/657.d00a247b.chunk.css.map",
-    "657.addae311.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/657.addae311.chunk.js.map",
+    "657.d277fd68.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/657.d277fd68.chunk.js.map",
     "907.a128d189.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/907.a128d189.chunk.js.map",
-    "691.7a03104a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/691.7a03104a.chunk.js.map"
+    "691.2d0df213.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/691.2d0df213.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d53cd9c6.css",
-    "static/js/main.2e8dd66a.js"
+    "static/js/main.3a0ecb04.js"
   ]
 }
