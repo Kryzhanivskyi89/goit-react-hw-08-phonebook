@@ -14,8 +14,7 @@ export const AuthorizationForm = () => {
         email: form.elements.email.value,
         password: form.elements.password.value,
       })
-    );
-    form.reset();
+    );    
   };
 
   return (
@@ -42,7 +41,7 @@ export const AuthorizationForm = () => {
             <input className={style.input} type="password" name="password"/>
             <label>Password</label>
           </div>
-          <button className={style.button}type="submit">           
+          <button className={style.button} type="submit">           
               <span></span>
               <span></span> 
               <span></span> 
@@ -50,8 +49,5 @@ export const AuthorizationForm = () => {
           Log In</button>
         </form>
     </div>
-
-    
-    
   );
 };

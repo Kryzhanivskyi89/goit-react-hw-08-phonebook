@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import {  HelmetProvider } from 'react-helmet-async';
 
 import { fetchContacts } from '../redux/operations';
 import { selectIsLoading } from '../redux/selectors';
@@ -21,14 +22,19 @@ export default function Contacts() {
   
   return (    
     <>
-      <ContactElem title="Phonebook">
-        <ContactForm />
-      </ContactElem>
-      <ContactElem title="Contacts">      
-        <Filter />  
-        <div>{isLoading && <Loader />}</div>
-        <ContactList />
-      </ContactElem>
+      <HelmetProvider>
+        
+        <ContactElem title="Phonebook">
+          <ContactForm />
+        </ContactElem>
+      
+        <ContactElem title="Contacts">      
+          <Filter />  
+          <div>{isLoading && <Loader />}</div>
+          <ContactList />
+        </ContactElem>
+          
+      </HelmetProvider>
     </>
   );
 }

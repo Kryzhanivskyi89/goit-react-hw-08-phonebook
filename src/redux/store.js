@@ -14,12 +14,6 @@ import { contactsReducer } from './contacts/contactsSlice';
 import { filterReducer } from './contacts/filterSlice';
 import { authorizationReducer } from './authorization/authorizationSlice';
 
-const authorizationPersistConfig = {
-  key: 'authorization',
-  storage,
-  whitelist: ['token'],
-};
-
 const middleware = [
   ...getDefaultMiddleware({
     serializableCheck: {
@@ -28,17 +22,19 @@ const middleware = [
   }),
 ];
 
+const authorizationPersistConfig = {
+  key: 'authorization',
+  storage,
+  whitelist: ['token'],
+};
 
 export const store = configureStore({
   reducer: {
-    contacts: contactsReducer,
-    filter: filterReducer,
     authorization: persistReducer(authorizationPersistConfig, authorizationReducer),
+    contacts: contactsReducer,
+    filter: filterReducer,    
   },
-
    middleware,
   devTools: process.env.NODE_ENV === 'development',
 });
-
-
 export const persistor = persistStore(store);

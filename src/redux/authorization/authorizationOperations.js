@@ -18,11 +18,10 @@ export const register = createAsyncThunk('auth/register', async (credentials, th
     setAuthHeader(res.data.token);
     return res.data;
   } catch (error) {
-    Notiflix.Notify.warning('E-mail or password not valid')
+    Notiflix.Notify.warning('Username, E-mail or password not valid')
     return thunkAPI.rejectWithValue(error.message);
   }
 });
-
 
 export const logIn = createAsyncThunk('auth/login', async (credentials, thunkAPI) => {
   try {
@@ -48,7 +47,7 @@ export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
 
 export const refreshUser = createAsyncThunk('auth/refresh', async (_, thunkAPI) => {
   const state = thunkAPI.getState();
-  const persistedToken = state.auth.token;
+  const persistedToken = state.authorization.token;
 
   if (persistedToken === null) {
     return thunkAPI.rejectWithValue('Unable to fetch user');
@@ -57,7 +56,6 @@ export const refreshUser = createAsyncThunk('auth/refresh', async (_, thunkAPI) 
   try {
     setAuthHeader(persistedToken);
     const res = await axios.get('/users/current');
-    console.log(res.data);
     return res.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
