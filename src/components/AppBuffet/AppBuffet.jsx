@@ -8,10 +8,11 @@ export const AppBuffet = () => {
   const { isLoggedIn } = useAuthorization();
 
   return (    
-      <header className={style.header}>
-        <Navigation />
-        {isLoggedIn ? <User /> : <AuthorizationNav />}
-      </header>     
+    <header className={style.header}>
+  
+      <Navigation />
+      {isLoggedIn ? <User /> : <AuthorizationNav />}
+    </header>     
     
   );
 };

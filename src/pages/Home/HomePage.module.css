@@ -6,7 +6,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(#0099ff, #fffb00);
+    /* background: linear-gradient(#0099ff, #fffb00); */
+    background: linear-gradient(67deg, #111 6.82%, rgba(17, 17, 17, 0) 100%),
+        url(../../images/iphone-6884672_1920.jpg),
+        lightgray 295.604px -4.18px / 92.376% 104.171% no-repeat;
+        background-size: cover;
 }
 
 .container {
@@ -22,5 +26,6 @@ body {
     font-weight: 500;
         font-size: 48;
         text-align: 'center';
+        color: #fff;
 }
 

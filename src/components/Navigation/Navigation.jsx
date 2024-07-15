@@ -6,9 +6,9 @@ export const Navigation = () => {
   const { isLoggedIn } = useAuthorization();
 
   return (
-    <div className={style.nav__home}>
+    <nav className={style.nav__home}>
       <NavLink className={style.nav__homeLink} to="/">Home</NavLink>
       {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
-    </div>
+    </nav>
   );
 };
