@@ -4,12 +4,12 @@ import { Suspense } from 'react';
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <AppBuffet />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-    </div>
+    </>
   );
 };
 

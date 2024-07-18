@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts, selectError, selectFilter, selectIsLoading } from 'redux/selectors';
+import { selectContacts, selectError, selectFilter, selectIsLoading } from 'redux/contacts/selectors';
 
-import { fetchContacts, deleteContact } from '../../redux/operations';
+import { fetchContacts, deleteContact } from '../../redux/contacts/operations';
 import  Loader  from './../Loader/Loader'
 import style from './ContactList.module.css';
 
@@ -26,12 +26,12 @@ const ContactList = () => {
         <ul className={style.list}>
             {isLoading && !error && <Loader />}
             {!isLoading && !error &&
-                filteringContacts(contacts).map(({ id, name, number }) => (
-                    <li className={style.item} key={id}>
+                filteringContacts(contacts).map(({ _id, name, phone }) => (
+                    <li className={style.item} key={phone}>
                         <p>
-                            {name}: {number}
+                            {name}: {phone}
                         </p>
-                        <button className={style.button} type="button" onClick={() => dispatch(deleteContact(id))} >Delete contact</button>
+                        <button className={style.button} type="button" onClick={() => dispatch(deleteContact(_id))} >Delete contact</button>
                     </li>
                 ))
             }

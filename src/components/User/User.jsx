@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { logOut } from '../../redux/authorization/authorizationOperations';
+// import { logoutThunk } from '../../redux/authorization/api';
+import { logOut } from '../../redux/auth/operations';
 import { useAuthorization } from '../../hooks/useAuthorization';
 
 import style from './User.module.css';
@@ -10,7 +11,7 @@ export const User = () => {
 
   return (
     <div className={style.user__wrap}>
-      <p>Welcome, {user.name}</p>
+      <p>Welcome, {user ? user.name : "Гість"}</p>
       <button className={style.user__button} type="button" onClick={() => dispatch(logOut())}>
         Logout
       </button>

@@ -6,14 +6,15 @@ import Layout from './Layout';
 
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
-import { refreshUser } from '../redux/authorization/authorizationOperations';
+import { refreshUser } from '../redux/auth/operations.js';
+// import { refreshUserThunk } from '../redux/authorization/api';
 import { useAuthorization } from '../hooks/useAuthorization';
 
 const Error = lazy(()=> import ( './Error/Error'));
 const HomePage = lazy(() => import('../pages/Home/Home'));
-const RegisterPage = lazy(() => import('../pages/Register'));
-const LoginPage = lazy(() => import('../pages/Login'));
-const ContactsPage = lazy(() => import('../pages/Contacts'));
+const RegisterPage = lazy(() => import('../pages/Registration/Register'));
+const LoginPage = lazy(() => import('../pages/Login/Login'));
+const ContactsPage = lazy(() => import('../pages/Contacts/Contacts'));
 
 const App = () => {
 

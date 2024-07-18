@@ -1,5 +1,5 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { AuthorizationForm } from '../components/AuthorizationForm/AuthorizationForm';
+import { AuthorizationForm } from '../../components/AuthorizationForm/AuthorizationForm';
 
 export default function Login() {
   return (

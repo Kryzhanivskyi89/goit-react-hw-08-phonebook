@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/authorization/authorizationOperations';
+// import { registerThunk } from '../../redux/authorization/api';
+import { register } from '../../redux/auth/operations';
 import style from './RegistrationForm.module.css';
 
 export const RegistrationForm = () => {

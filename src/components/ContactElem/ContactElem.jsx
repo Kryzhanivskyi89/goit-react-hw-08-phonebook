@@ -4,10 +4,10 @@ import styles from './ContactElem.module.css';
 const ContactElem = ({title, children}) => {
     return (
         <>
-            <div className={styles.card}>
+            <section className={styles.card}>
                 <h2 className={styles.title}>{title}</h2>
                 {children}
-            </div>
+            </section>
         </>
     );
 };
