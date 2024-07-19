@@ -10,7 +10,7 @@
     flex-direction: column;
     margin-bottom: 16px;
 } */
-
+/* 
 html {
     height: 100%;
 }
@@ -20,7 +20,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     background: linear-gradient(#0099ff, #fffb00);
-}
+} */
 
 .login__box {
     position: absolute;
@@ -76,7 +76,7 @@ body {
 
 .login__box .user__box input:focus~label,
 .login__box .user__box input:valid~label {
-    top: -20px;
+    top: -30px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;

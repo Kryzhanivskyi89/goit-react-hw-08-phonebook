@@ -1,20 +1,23 @@
 .name {
     display: block;
     margin-bottom: 5px;
-    font-size: 20px;
-    color: #4a4a4a;
+    font-size: 22px;
     color: #fffb00;
-
-   
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .input {
     display: block;
-    width: 286px;
+    width: 100%;
+    height: 40px;
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 10px;
     background-color: #fff;
     color: #000;
     outline-color: #fffb00;
+    border-radius: 10px;
+    font-size: 22px;
+    
 }

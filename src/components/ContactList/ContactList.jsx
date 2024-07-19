@@ -28,10 +28,9 @@ const ContactList = () => {
             {!isLoading && !error &&
                 filteringContacts(contacts).map(({ _id, name, phone }) => (
                     <li className={style.item} key={phone}>
-                        <p>
-                            {name}: {phone}
-                        </p>
-                        <button className={style.button} type="button" onClick={() => dispatch(deleteContact(_id))} >Delete contact</button>
+                        <p className={style.nameNumber}>{name}:</p>
+                        <p className={style.nameNumber}>{phone}</p>
+                        <button className={style.button} type="button" onClick={() => dispatch(deleteContact(_id))} >Delete</button>
                     </li>
                 ))
             }
