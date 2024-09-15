@@ -1,113 +1,130 @@
-# React homework template
+# Phonebook Application
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+## Overview
 
-## Создание репозитория по шаблону
+This project is a phonebook application that allows users to store, manage, and
+interact with their contacts securely and efficiently. The application features
+a robust backend integrated with MongoDB, a dynamic frontend using React and
+Redux, and has been successfully deployed on Render and Netlify.
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+## Key Features
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+1. **JWT Authorization System**
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+   - Implemented secure user authentication using JSON Web Tokens (JWT).
+   - Ensures protected access to user data, enhancing overall application
+     security.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+2. **CRUD Operations for Contacts**
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+   - Developed a complete set of CRUD (Create, Read, Update, Delete) operations.
+   - Provides users with the ability to efficiently manage their contacts.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+3. **MongoDB Integration**
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+   - Integrated MongoDB for reliable data storage and processing.
+   - Ensures the application is scalable and robust.
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+4. **Frontend Authorization with Redux**
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
+   - Implemented a seamless authentication system on the frontend using Redux.
+   - Ensures consistent state management and secure data access.
 
-## Подготовка к работе
+5. **Dynamic Contact Management Interface**
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+   - Developed an intuitive and user-friendly interface for managing contacts.
+   - Enhances the user experience with a responsive and easy-to-navigate UI.
 
-## Деплой
+6. **Error Handling**
 
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+   - Implemented effective error handling mechanisms.
+   - Significantly improves user experience and application stability.
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+7. **Deployment on Render and Netlify**
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+   - Successfully deployed both backend and frontend to Render and Netlify.
+   - Ensures the application runs smoothly in a production environment.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+8. **Environment Configuration and Troubleshooting**
 
-### Статус деплоя
+   - Resolved authorization issues on the hosting environment.
+   - Ensured stable operation of the authentication system.
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+9. **Database Connectivity Issue Resolution**
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+   - Fixed issues with incorrect database connections.
+   - Ensured proper data storage and retrieval.
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+10. **Form Input Debugging**
 
-![Deployment status](./assets/deploy-status.png)
+- Resolved mismatches between form input names and backend parameters.
+- Ensured correct addition of new contacts.
 
-### Живая страница
+## Technologies Used
 
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
+- **Frontend:** React, Redux
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose
+- **Security:** JWT (JSON Web Tokens)
+- **Deployment:** Render, Netlify
 
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
+## Setup and Installation
 
-### Маршрутизация
+1. Clone the repository:
+   ```bash
+   git clone <https://github.com/your-username/phonebook-application.git>
+   ```
+1. Navigate to the project directory:
+    
+    ```bash
+    cd phonebook-application
+    
+    ```
+    
+2. Install the dependencies for both frontend and backend:
+    
+    ```bash
+    npm install
+    cd client
+    npm install
+    
+    ```
+    
+3. Create a `.env` file in the root directory and add your environment variables:
+    
+    ```
+    MONGO_URI=your_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    
+    ```
+    
+4. Start the backend server:
+    
+    ```bash
+    npm run server
+    
+    ```
+    
+5. Start the frontend development server:
+    
+    ```bash
+    cd client
+    npm start
+    
+    ```
+    
 
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
+## Usage
 
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
+- Navigate to `http://localhost:3000` to interact with the application.
+- Use the authentication system to securely log in and manage contacts.
 
-## Как это работает
+## Contributing
 
-![How it works](./assets/how-it-works.png)
+Feel free to fork this repository and contribute by submitting a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+
+## Conclusion
+
+This project was a valuable opportunity to enhance my skills in web application development, database integration, deployment, and debugging. It allowed me to develop real-world problem-solving abilities and further my technical knowledge, making me well-prepared for new challenges in web development.
+
+If you're interested in collaborating or have any questions, feel free to reach out!
